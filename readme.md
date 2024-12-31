@@ -13,7 +13,6 @@ This repository contains the necessary files to deploy a MySQL database using Do
 
 ```bash
 git clone https://github.com/manzana2164/DB.git
-cd worpik-mysql-deploy
 ```
 
 ### Dockerfile
