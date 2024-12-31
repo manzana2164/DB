@@ -4,11 +4,11 @@ services:
   mysql:
     build: .
     image: mysql:latest
-    container_name: workpik_mysql
+    container_name: worpik_mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: Workpik123$
-      MYSQL_DATABASE: workpik_db
+      MYSQL_ROOT_PASSWORD: Worpik123$
+      MYSQL_DATABASE: worpik_db
       MYSQL_USER: manzana
       MYSQL_PASSWORD: Xperia1631$
     ports:

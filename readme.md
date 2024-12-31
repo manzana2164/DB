@@ -1,4 +1,4 @@
-# Workpik MySQL Deployment with Docker
+# Worpik MySQL Deployment with Docker
 
 This repository contains the necessary files to deploy a MySQL database using Docker. This setup is intended for testing and interview purposes for "Worpik".
 
@@ -24,8 +24,8 @@ The `Dockerfile` sets up a MySQL database.
 FROM mysql:latest
 
 # Set environment variables
-ENV MYSQL_ROOT_PASSWORD=Workpik123$
-ENV MYSQL_DATABASE=workpik_db
+ENV MYSQL_ROOT_PASSWORD=Worpik123$
+ENV MYSQL_DATABASE=worpik_db
 ENV MYSQL_USER=manzana
 ENV MYSQL_PASSWORD=Xperia1631$
 
@@ -47,8 +47,8 @@ services:
     container_name: workpik_mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: Workpik123$
-      MYSQL_DATABASE: workpik_db
+      MYSQL_ROOT_PASSWORD: Worpik123$
+      MYSQL_DATABASE: worpik_db
       MYSQL_USER: manzana
       MYSQL_PASSWORD: Xperia1631$
     ports:
@@ -66,10 +66,10 @@ To build and run the Docker container, use the following commands:
 
 ```bash
 # Build the Docker image
-docker build -t workpik-mysql .
+docker build -t worpik-mysql .
 
 # Run the Docker container
-docker run -d -p 3306:3306 --name workpik_mysql workpik-mysql
+docker run -d -p 3306:3306 --name worpik_mysql workpik-mysql
 ```
 
 If you are using Docker Compose, simply run:
@@ -86,15 +86,15 @@ You can access the MySQL database using any MySQL client. Use the following cred
 - Port: `3306`
 - User: `manzana`
 - Password: `Xperia1631$`
-- Database: `workpik_db`
+- Database: `worpik_db`
 
 ## Cleanup
 
 To stop and remove the Docker container, use the following commands:
 
 ```bash
-docker stop workpik_mysql
-docker rm workpik_mysql
+docker stop worpik_mysql
+docker rm worpik_mysql
 ```
 
 If you used Docker Compose, run:
