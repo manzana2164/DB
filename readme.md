@@ -42,9 +42,11 @@ For easier management, you can use Docker Compose. Create a `docker-compose.yml`
 version: "3.8"
 
 services:
-  db:
+  mysql:
     build: .
+    image: mysql:latest
     container_name: workpik_mysql
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: Workpik123$
       MYSQL_DATABASE: workpik_db
