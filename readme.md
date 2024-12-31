@@ -1,4 +1,4 @@
-# Carestino MySQL Deployment with Docker
+# Workpik MySQL Deployment with Docker
 
 This repository contains the necessary files to deploy a MySQL database using Docker. This setup is intended for testing and interview purposes for "Worpik".
 
